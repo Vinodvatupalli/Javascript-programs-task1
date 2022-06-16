@@ -1,0 +1,15 @@
+<html lang="en">
+  <head>
+    <title>downloading file from API</title>
+  </head>
+  <body style="text-align: center">
+    <a id="a1" download="file1.txt">Download text file</a>
+    <script>
+      const a1 = document.getElementById("a1");
+      const blob1 = new Blob(["Downloading a file using blob api"], {
+        type: "text/plain",
+      });
+      a1.href = URL.createObjectURL(blob1);
+    </script>
+  </body>
+</html>
