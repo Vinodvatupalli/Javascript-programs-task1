@@ -5,13 +5,13 @@ http.open("get", "products.json", true);
 http.send();
 
 http.onload = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    let products = JSON.parse(this.responseText);
+	if (this.readyState == 4 && this.status == 200) {
+		let products = JSON.parse(this.responseText);
 
-    let output = "";
+		let output = "";
 
-    for (let item of products) {
-      output += `
+		for (let item of products) {
+			output += `
 				<div class="product">
 					<img src="${item.image}" alt="${item.description}">
 					<p class="title">${item.title}</p>
@@ -23,8 +23,8 @@ http.onload = function () {
 					<p class="cart">Add to cart <i class="bx bx-cart-alt"></i></p>
 				</div>
 			`;
-    }
+		}
 
-    document.querySelector(".products").innerHTML = output;
-  }
+		document.querySelector(".products").innerHTML = output;
+	}
 };
