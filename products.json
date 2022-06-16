@@ -1,0 +1,38 @@
+[
+  {
+    "image": "01.jpg",
+    "title": "Seiko",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis, ducimus.",
+    "price": "9,99"
+  },
+  {
+    "image": "02.jpg",
+    "title": "Fossil",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis, ducimus.",
+    "price": "9,99"
+  },
+  {
+    "image": "03.jpg",
+    "title": "Omega",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis, ducimus.",
+    "price": "9,99"
+  },
+  {
+    "image": "04.jpg",
+    "title": "Fossil 10 ATM",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis, ducimus.",
+    "price": "9,99"
+  },
+  {
+    "image": "05.jpg",
+    "title": "Titan",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis, ducimus.",
+    "price": "9,99"
+  },
+  {
+    "image": "06.jpg",
+    "title": "Digital",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis, ducimus.",
+    "price": "9,99"
+  }
+]
