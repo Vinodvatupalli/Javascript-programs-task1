@@ -1,20 +1,20 @@
 function getTime() {
-  var tz = document.getElementById("timezone").value;
+    var tz = document.getElementById("timezone").value;
 
-  var result = luxon.DateTime.local().setZone(tz);
+    var result = luxon.DateTime.local().setZone(tz);
 
-  var date = result.c;
-  readData =
-    date.day +
-    "-" +
-    date.month +
-    "-" +
-    date.year +
-    "  " +
-    date.hour +
-    ":" +
-    date.minute +
-    ":" +
-    date.second;
-  document.getElementById("result").innerHTML = readData;
+    var date = result.c;
+    readData =
+        date.day +
+        "-" +
+        date.month +
+        "-" +
+        date.year +
+        "  " +
+        date.hour +
+        ":" +
+        date.minute +
+        ":" +
+        date.second;
+    document.getElementById("result").innerHTML = readData;
 }

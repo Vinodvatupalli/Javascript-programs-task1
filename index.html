@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Display Time of a country</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="container">
+</head>
+
+<body class="container">
     <div class="head">
-      <label>Please Select the country to display the date & time:</label>
+        <label>Please Select the country to display the date & time:</label>
 
-      <select id="timezone" name="countrytime">
-        <option value="UTC-7">PST (US)</option>
+        <select id="timezone" name="countrytime">
+            <option value="UTC-7">PST (US)</option>
 
-        <option value="UTC-6">MST (US)</option>
+            <option value="UTC-6">MST (US)</option>
 
-        <option value="UTC-5">CST (US)</option>
+            <option value="UTC-5">CST (US)</option>
 
-        <option value="UTC-4">EST (US)</option>
+            <option value="UTC-4">EST (US)</option>
 
-        <option value="UTC-3">Rio - brazil</option>
+            <option value="UTC-3">Rio - brazil</option>
 
-        <option value="UTC-2">UTC</option>
+            <option value="UTC-2">UTC</option>
 
-        <option value="UTC!1">BST (London)</option>
+            <option value="UTC!1">BST (London)</option>
 
-        <option value="UTC+2">CEST (Berlin)</option>
-        <option value="UTC+3">MSK(Moscow)</option>
-        <option value="UTC+4">UAE</option>
+            <option value="UTC+2">CEST (Berlin)</option>
+            <option value="UTC+3">MSK(Moscow)</option>
+            <option value="UTC+4">UAE</option>
 
-        <option value="UTC+5:30">IST(Mumbai)</option>
-        <option value="UTC+8">Singapore</option>
-        <option value="UTC+8">CST(Beijing)</option>
-        <option value="UTC+9">JST(Tokyo)</option>
-        <option value="UTC+10">AEST(Sydney,AUS)</option>
-        <option value="UTC+12">NZST(Auckland,NZ)</option>
-      </select>
-      <button class="button" onclick="getTime()">What is Time?</button>
-      <br />
-      <span id="result"></span>
+            <option value="UTC+5:30">IST(Mumbai)</option>
+            <option value="UTC+8">Singapore</option>
+            <option value="UTC+8">CST(Beijing)</option>
+            <option value="UTC+9">JST(Tokyo)</option>
+            <option value="UTC+10">AEST(Sydney,AUS)</option>
+            <option value="UTC+12">NZST(Auckland,NZ)</option>
+        </select>
+        <button class="button" onclick="getTime()">What is Time?</button>
+        <br />
+        <span id="result"></span>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.25.0/luxon.js"></script>
-  </body>
-  <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+
 </html>
