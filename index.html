@@ -1,38 +1,44 @@
 <html>
-    <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-</head>
-<body id="container">
-<canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <body id="container">
+    <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
 
-<script>
-var xValues = [100,200,300,400,500,600,700,800,900,1000];
+    <script>
+      var xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 
-new Chart("myChart", {
-  type: "radar",
-  data: {
-    labels: xValues,
-    datasets: [{ 
-      data: [560,1040,1060,1560,1070,1110,1890,2210,6830,2978],
-      backgroundColor:'rgba(255,0,0,0.3)',
-      borderColor: "brown",
-      fill: false
-    }, { 
-      data: [1600,8700,1700,1900,2000,5700,4000,2000,6000,4000],
-      backgroundColor:'rgba(200,0,10,0.3)',
-      borderColor: "green",
-      fill: false
-    }, { 
-      data: [500,700,8000,5000,1000,4000,7000,1000,200,100],
-      backgroundColor:'rgba(100,0,50,0.3)',
-      borderColor: "orange",
-      fill: false
-    }]
-  },
-  options: {
-    legend: {display: false}
-  }
-});
-</script>
-</body>
+      new Chart("myChart", {
+        type: "radar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              data: [560, 1040, 1060, 1560, 1070, 1110, 1890, 2210, 6830, 2978],
+              backgroundColor: "rgba(255,0,0,0.3)",
+              borderColor: "brown",
+              fill: false,
+            },
+            {
+              data: [
+                1600, 8700, 1700, 1900, 2000, 5700, 4000, 2000, 6000, 4000,
+              ],
+              backgroundColor: "rgba(200,0,10,0.3)",
+              borderColor: "green",
+              fill: false,
+            },
+            {
+              data: [500, 700, 8000, 5000, 1000, 4000, 7000, 1000, 200, 100],
+              backgroundColor: "rgba(100,0,50,0.3)",
+              borderColor: "orange",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+        },
+      });
+    </script>
+  </body>
 </html>
