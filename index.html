@@ -1,22 +1,21 @@
 <html>
-<head>
-<title>Callback Function</title>
-</head>
-<body style="text-align:center; color:green">
-<h1> This is callback function </h1>
-<script>
-function showData(name, fullname) {
-alert(' Hello ' + name + '\n Your entered fullname is ' + fullname);
-}
+  <head>
+    <title>Callback Function</title>
+  </head>
+  <body style="text-align: center; color: green">
+    <h1>This is callback function</h1>
+    <script>
+      function showData(name, fullname) {
+        alert(" Hello " + name + "\n Your entered fullname is " + fullname);
+      }
 
-function getData(callback) {
-var name = prompt(" Welcome to callback function\n What is your name?");
-var fullname = prompt("Please provide fullname");
-callback(name, fullname);
-}
+      function getData(callback) {
+        var name = prompt(" Welcome to callback function\n What is your name?");
+        var fullname = prompt("Please provide fullname");
+        callback(name, fullname);
+      }
 
-getData(showData);
-</script>
-</body>
-
+      getData(showData);
+    </script>
+  </body>
 </html>
