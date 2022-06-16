@@ -1,0 +1,11 @@
+.container {
+  background-image: url(image.webp);
+  text-align: center;
+  background-color: bisque;
+}
+.head {
+  font-size: large;
+  font-weight: 600;
+  font-family: serif;
+  margin: 300px 50px 75px 100px;
+}
